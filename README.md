@@ -1,6 +1,4 @@
-# DaVinci Resolve Insta360 Timecode Batch Updater | Python Script
-
-# DaVinci Resolve Insta360  Timecode Batch Updater
+# DaVinci Resolve Insta360 Timecode Batch Updater
 
 Automatically extract and set timecode metadata from Insta360 video filenames in DaVinci Resolve.
 
@@ -10,7 +8,7 @@ This Python script automates the tedious process of setting timecode for Insta36
 
 ### Why This Matters
 
-Insta360 X4 videos follow a consistent naming convention that includes the filming date and precise time. This script leverages that metadata to automatically populate accurate timecode information, which is essential for:
+Insta360 videos follow a consistent naming convention that includes the filming date and precise time. This script leverages that metadata to automatically populate accurate timecode information, which is essential for:
 - Syncing multi-camera footage
 - Maintaining accurate timeline references
 - Streamlining post-production workflows
@@ -18,12 +16,12 @@ Insta360 X4 videos follow a consistent naming convention that includes the filmi
 
 ## Features
 
-âœ… **Automatic Timecode Extraction** - Parses HH:MM:SS from Insta360 filenames  
-âœ… **Batch Processing** - Update multiple clips in one operation  
-âœ… **Cross-Platform Support** - Works on Windows, macOS, and Linux  
-âœ… **Error Handling** - Detailed logging for successful and failed operations  
-âœ… **Non-Destructive** - Only modifies timecode metadata, not media files  
-âœ… **User-Friendly Output** - Clear feedback on what was processed  
+✅ **Automatic Timecode Extraction** - Parses HH:MM:SS from Insta360 filenames  
+✅ **Batch Processing** - Update multiple clips in one operation  
+✅ **Cross-Platform Support** - Works on Windows, macOS, and Linux  
+✅ **Error Handling** - Detailed logging for successful and failed operations  
+✅ **Non-Destructive** - Only modifies timecode metadata, not media files  
+✅ **User-Friendly Output** - Clear feedback on what was processed  
 
 ## Filename Pattern
 
@@ -62,7 +60,7 @@ Quick access: Press `Win + R`, paste the path above, press Enter
 ```
 ~/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts/Utility
 ```
-Quick access: Open Finder â†’ `Cmd + Shift + G` â†’ paste the path above
+Quick access: Open Finder → `Cmd + Shift + G` → paste the path above
 
 **Linux:**
 ```
@@ -71,14 +69,14 @@ Quick access: Open Finder â†’ `Cmd + Shift + G` â†’ paste the path abo
 
 ### Step 2: Download and Save the Script
 
-1. Download `BatchUpdateTimecode_Insta360X4.py` from this repository
+1. Download `BatchUpdateTimecode_Insta360.py` from this repository
 2. Place it in the `Utility` folder (see Step 1)
 3. Restart DaVinci Resolve completely
 
 ### Step 3: Verify Installation
 
 1. Open DaVinci Resolve
-2. Go to **Workspace â†’ Scripts â†’ Utility**
+2. Go to **Workspace → Scripts → Utility**
 3. You should see "BatchUpdateTimecode_Insta360" in the menu
 
 ## Usage
@@ -92,7 +90,7 @@ Quick access: Open Finder â†’ `Cmd + Shift + G` â†’ paste the path abo
    - You can multi-select by holding `Ctrl` (Windows) or `Cmd` (macOS)
 
 3. **Run the Script**
-   - Go to **Workspace â†’ Scripts â†’ Utility â†’ BatchUpdateTimecode_Insta360**
+   - Go to **Workspace → Scripts → Utility → BatchUpdateTimecode_Insta360**
    - The script will process your selected clips
 
 4. **Review Results**
@@ -104,15 +102,15 @@ Quick access: Open Finder â†’ `Cmd + Shift + G` â†’ paste the path abo
 ```
 Found 3 selected clip(s)
 ------------------------------------------------------------
-âœ“ SUCCESS: VID_20251130_104916_00_004.mp4
+✓ SUCCESS: VID_20251130_104916_00_004.mp4
   Extracted Time: 10:49:16
   New Timecode: 10:49:16:00
 
-âœ“ SUCCESS: VID_20251130_111242_00_005.mp4
+✓ SUCCESS: VID_20251130_111242_00_005.mp4
   Extracted Time: 11:12:42
   New Timecode: 11:12:42:00
 
-âœ“ SUCCESS: VID_20251130_133049_00_016_017.mp4
+✓ SUCCESS: VID_20251130_133049_00_016_017.mp4
   Extracted Time: 13:30:49
   New Timecode: 13:30:49:00
 
@@ -209,4 +207,4 @@ This script modifies metadata in your DaVinci Resolve project. Always test on a 
 
 ---
 
-**Happy editing! ðŸŽ¬**
+**Happy editing! 🎬**
