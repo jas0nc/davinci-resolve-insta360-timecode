@@ -1,12 +1,12 @@
-# DaVinci Resolve Insta360 X4 Timecode Batch Updater | Python Script
+# DaVinci Resolve Insta360 Timecode Batch Updater | Python Script
 
-# DaVinci Resolve Insta360 X4 Timecode Batch Updater
+# DaVinci Resolve Insta360  Timecode Batch Updater
 
-Automatically extract and set timecode metadata from Insta360 X4 video filenames in DaVinci Resolve.
+Automatically extract and set timecode metadata from Insta360 video filenames in DaVinci Resolve.
 
 ## Overview
 
-This Python script automates the tedious process of setting timecode for Insta360 X4 footage in DaVinci Resolve. Instead of manually entering timecode for each clip, the script intelligently parses the timestamp embedded in your Insta360 X4 filenames and applies it as the Start Timecode in your media pool.
+This Python script automates the tedious process of setting timecode for Insta360 footage in DaVinci Resolve. Instead of manually entering timecode for each clip, the script intelligently parses the timestamp embedded in your Insta360 filenames and applies it as the Start Timecode in your media pool.
 
 ### Why This Matters
 
@@ -18,7 +18,7 @@ Insta360 X4 videos follow a consistent naming convention that includes the filmi
 
 ## Features
 
-âœ… **Automatic Timecode Extraction** - Parses HH:MM:SS from Insta360 X4 filenames  
+âœ… **Automatic Timecode Extraction** - Parses HH:MM:SS from Insta360 filenames  
 âœ… **Batch Processing** - Update multiple clips in one operation  
 âœ… **Cross-Platform Support** - Works on Windows, macOS, and Linux  
 âœ… **Error Handling** - Detailed logging for successful and failed operations  
@@ -27,7 +27,7 @@ Insta360 X4 videos follow a consistent naming convention that includes the filmi
 
 ## Filename Pattern
 
-This script works with Insta360 X4 filenames in this format:
+This script works with Insta360 filenames in this format:
 
 ```
 VID_YYYYMMDD_HHMMSS_XX_YYY.mp4
@@ -46,7 +46,7 @@ Where:
 
 - **DaVinci Resolve** (version 18.0 or later recommended)
 - **Python 3.6+** (typically included with DaVinci Resolve)
-- Media clips in your DaVinci Resolve project with Insta360 X4 naming convention
+- Media clips in your DaVinci Resolve project with Insta360 naming convention
 
 ## Installation
 
@@ -79,12 +79,12 @@ Quick access: Open Finder â†’ `Cmd + Shift + G` â†’ paste the path abo
 
 1. Open DaVinci Resolve
 2. Go to **Workspace â†’ Scripts â†’ Utility**
-3. You should see "BatchUpdateTimecode_Insta360X4" in the menu
+3. You should see "BatchUpdateTimecode_Insta360" in the menu
 
 ## Usage
 
 1. **Import Your Footage**
-   - Import Insta360 X4 video files into your DaVinci Resolve Media Pool
+   - Import Insta360 video files into your DaVinci Resolve Media Pool
    - Ensure filenames follow the `VID_YYYYMMDD_HHMMSS_XX_YYY.mp4` pattern
 
 2. **Select Clips**
@@ -92,7 +92,7 @@ Quick access: Open Finder â†’ `Cmd + Shift + G` â†’ paste the path abo
    - You can multi-select by holding `Ctrl` (Windows) or `Cmd` (macOS)
 
 3. **Run the Script**
-   - Go to **Workspace â†’ Scripts â†’ Utility â†’ BatchUpdateTimecode_Insta360X4**
+   - Go to **Workspace â†’ Scripts â†’ Utility â†’ BatchUpdateTimecode_Insta360**
    - The script will process your selected clips
 
 4. **Review Results**
@@ -138,7 +138,7 @@ Processing complete:
 
 ### Timecode Not Updating
 
-- Verify your filenames match the Insta360 X4 pattern: `VID_YYYYMMDD_HHMMSS_XX_YYY.mp4`
+- Verify your filenames match the Insta360 pattern: `VID_YYYYMMDD_HHMMSS_XX_YYY.mp4`
 - Check that the date/time portion is valid (not corrupted filenames)
 - Ensure clips are stored in the Media Pool (not just in bins on the timeline)
 
@@ -193,7 +193,7 @@ This extracts the first occurrence of 6 consecutive digits after the date.
 
 - [DaVinci Resolve Python API Documentation](https://www.blackmagicdesign.com/developer/product/davinci-resolve/)
 - [DaVinci Resolve Official Support](https://www.blackmagicdesign.com/support/)
-- [Insta360 X4 Official Documentation](https://www.insta360.com/)
+- [Insta360 Official Documentation](https://www.insta360.com/)
 
 ## Contributing
 
